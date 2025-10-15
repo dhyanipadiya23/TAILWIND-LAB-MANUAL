@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Animations & Transitions</title>
+    <link href="src/output.css" rel="stylesheet"/>
+</head>
+<body class="bg-slate-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-10 text-rose-700">Tailwind CSS Animations & Transitions</h1>
+        
+        <!-- Scale-up on hover section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-amber-700">Scale-up on Hover</h2>
+            <div class="flex justify-center">
+                <div class="bg-amber-500 text-white p-8 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-110 cursor-pointer">
+                    <p class="text-xl font-medium">Hover over me!</p>
+                    <p class="mt-2">I'll smoothly scale up</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Loading spinner section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-emerald-700">Loading Spinner</h2>
+            <div class="flex justify-center">
+                <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-rose-500"></div>
+            </div>
+        </section>
+        
+        <!-- Hero section with bouncing arrow -->
+        <section class="mb-16 relative">
+            <div class="bg-gradient-to-r from-rose-500 to-amber-600 text-white rounded-xl p-12 text-center">
+                <h2 class="text-3xl font-bold mb-4">Hero Section</h2>
+                <p class="text-xl mb-8">Scroll down to see more content</p>
+                
+                <!-- Bouncing arrow at the bottom -->
+                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+                    <svg class="animate-bounce w-8 h-8 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Card with fade-in effect -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-rose-700">Card with Fade-in Effect</h2>
+            <div class="flex justify-center">
+                <div class="bg-white rounded-lg shadow-lg p-6 opacity-0 hover:opacity-100 transition-opacity duration-700 cursor-pointer">
+                    <h3 class="text-xl font-bold text-amber-800 mb-2">Fade-in Card</h3>
+                    <p class="text-slate-600">Hover over this card to see it fade in smoothly using opacity and transition utilities.</p>
+                    <button class="mt-4 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded transition-colors duration-300">Learn More</button>
+                </div>
+            </div>
+            <p class="text-center mt-4 text-slate-500">(Hover over the card above to see the effect)</p>
+        </section>
+    
+    </div>
+</body>
+</html>

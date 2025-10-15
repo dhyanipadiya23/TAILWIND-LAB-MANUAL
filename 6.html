@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Effects</title>
+    <link href="src/output.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="container mx-auto max-w-4xl">
+        <h1 class="text-3xl font-bold mb-8 text-center">Tailwind CSS Effects</h1>
+        
+        <!-- Section 1: Button with Hover Glow Effect -->
+        <section class="mb-12 p-8 bg-white rounded-lg shadow">
+            <h2 class="text-xl font-semibold mb-6">Button with Hover Glow Effect</h2>
+            <div class="flex justify-center">
+                <button class="bg-blue-500 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:shadow-blue-400/50 hover:scale-105">
+                    Hover for Glow Effect
+                </button>
+            </div>
+        </section>
+        
+        <!-- Section 2: Image with Opacity Effect on Hover -->
+        <section class="mb-12 p-8 bg-white rounded-lg shadow">
+            <h2 class="text-xl font-semibold mb-6">Image with Opacity Effect on Hover</h2>
+            <div class="flex justify-center">
+                <div class="w-64 h-64 overflow-hidden rounded-lg">
+                    <img 
+                        src="https://media.istockphoto.com/id/1550071750/photo/green-tea-tree-leaves-camellia-sinensis-in-organic-farm-sunlight-fresh-young-tender-bud.jpg?s=612x612&w=0&k=20&c=RC_xD5DY5qPH_hpqeOY1g1pM6bJgGJSssWYjVIvvoLw=" 
+                        alt="Nature Image" 
+                        class="w-full h-full object-cover opacity-50 transition-opacity duration-300 hover:opacity-100"
+                    >
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 3: Text Blocks with Different Mix-Blend Modes -->
+        <section class="p-8 bg-white rounded-lg shadow">
+            <h2 class="text-xl font-semibold mb-6">Text Blocks with Mix-Blend Modes</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="relative h-64 overflow-hidden rounded-lg">
+                    <div class="absolute inset-0 bg-yellow-300"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <p class="text-5xl font-black text-blue-700 mix-blend-multiply p-4 text-center">
+                            MULTIPLY BLEND
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="relative h-64 overflow-hidden rounded-lg">
+                    <div class="absolute inset-0 bg-yellow-300"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <p class="text-5xl font-black text-blue-700 mix-blend-overlay p-4 text-center">
+                            OVERLAY BLEND
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

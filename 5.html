@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Alignment Examples</title>
+    <link href="src/output.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100">
+    <section class="min-h-screen flex items-center justify-center p-4">
+        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Login Form</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
+                    <input type="email" id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="email@example.com">
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                    <input type="password" id="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="••••••••">
+                </div>
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="remember" class="mr-2">
+                        <label for="remember" class="text-sm text-gray-600">Remember me</label>
+                    </div>
+                    <a href="#" class="text-sm text-blue-500 hover:text-blue-700">Forgot Password?</a>
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                    Sign In
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section 2: Flexbox Container with Different Alignments -->
+    <section class="min-h-screen p-8 bg-gray-200">
+        <h2 class="text-2xl font-bold text-center mb-8 text-gray-800">Flexbox Alignment Example</h2>
+        
+        <div class="flex h-96 bg-white rounded-lg shadow-md">
+            <div class="flex-1 flex items-start justify-center p-4 border-r border-gray-200">
+                <div class="bg-blue-500 text-white p-6 rounded-lg shadow">
+                    <h3 class="font-bold mb-2">Top Aligned</h3>
+                    <p>This item is aligned to the top of the container</p>
+                </div>
+            </div>
+            
+            <div class="flex-1 flex items-center justify-center p-4 border-r border-gray-200">
+                <div class="bg-green-500 text-white p-6 rounded-lg shadow">
+                    <h3 class="font-bold mb-2">Middle Aligned</h3>
+                    <p>This item is aligned to the middle of the container</p>
+                </div>
+            </div>
+            
+            <div class="flex-1 flex items-end justify-center p-4">
+                <div class="bg-purple-500 text-white p-6 rounded-lg shadow">
+                    <h3 class="font-bold mb-2">Bottom Aligned</h3>
+                    <p>This item is aligned to the bottom of the container</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

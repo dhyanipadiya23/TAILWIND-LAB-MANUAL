@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Transform Effects - Pastel Theme</title>
+    <link href="src/output.css" rel="stylesheet"/>
+</head>
+<body class="bg-rose-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-10 text-rose-500">Tailwind CSS Transform Effects</h1>
+        
+        <!-- Image with rotate-45 on hover -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-sky-500">Image with rotate-45 on hover</h2>
+            <div class="flex justify-center">
+                <div class="overflow-hidden rounded-lg shadow-lg bg-white">
+                    <img src="img/Spider-man-pose-art-picture_iphone_1080x1920.jpg" alt="Nature image" 
+                         class="w-64 h-64 object-cover transform transition-transform duration-500 hover:rotate-45">
+                </div>
+            </div>
+            <p class="text-center mt-4 text-sky-400">Hover over the image to see it rotate 45 degrees</p>
+        </section>
+        
+        <!-- Card with scale-105 zoom effect on hover -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-emerald-500">Card with scale-105 zoom effect on hover</h2>
+            <div class="flex justify-center">
+                <div class="bg-white rounded-lg shadow-lg p-6 max-w-sm transform transition-transform duration-300 hover:scale-105">
+                    <h3 class="text-xl font-bold text-lime-600 mb-2">Zoom Card</h3>
+                    <p class="text-lime-500 mb-4">This card zooms in slightly when you hover over it, creating a subtle interactive effect.</p>
+                    <img src="img/spider-man-2020-all-0n-1920x1200.jpg" alt="Landscape" class="w-full h-40 object-cover rounded mb-4">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Banner with skew-x-6 text effect -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-purple-400">Banner with skew-x-6 text effect</h2>
+            <div class="bg-gradient-to-r from-pink-300 to-purple-300 text-white p-8 rounded-lg">
+                <h3 class="text-3xl font-bold transform skew-x-6 mb-4">SPECIAL OFFER!</h3>
+                <p class="text-xl">Get 50% off on all products this weekend only!</p>
+                <button class="mt-4 bg-white text-pink-500 px-6 py-2 rounded-full font-bold hover:bg-pink-100 transition-colors duration-300">Shop Now</button>
+            </div>
+        </section>
+        
+        <!-- Icon with combined rotate + scale on hover -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-indigo-400">Icon with combined rotate + scale on hover</h2>
+            <div class="flex justify-center">
+                <div class="bg-white p-8 rounded-full shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-rose-400 transform transition-all duration-500 hover:rotate-180 hover:scale-125" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                </div>
+            </div>
+            <p class="text-center mt-4 text-indigo-300">Hover over the refresh icon to see it rotate 180° and scale up</p>
+        </section>
+    </div>
+</body>
+</html>
